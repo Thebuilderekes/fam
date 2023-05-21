@@ -6,11 +6,14 @@
 }
 
 body {
-	margin: 0 5%;
+	margin: 15% 5%;
 }
 
 h1 {
+	margin: 10% 0;
 	text-align: center;
+	transition: 1s all;
+	font-weight: 700;
 }
 
 table {
@@ -19,6 +22,7 @@ table {
 	width: 100%;
 	transition: 1s all;
 	text-decoration: underline;
+	color: white;
 }
 
 table .parents {
@@ -29,6 +33,11 @@ table .parents {
 table .parents td {
 	width: 50%;
 }
+
+table strong {
+	text-decoration: none;
+}
+
 table .collapsible-content td table {
 	width: 70%;
 	margin: 0 auto;
@@ -37,19 +46,20 @@ table .collapsible-content td table {
 table .collapsible-content td {
 	display: flex;
 	flex-direction: column;
+	transition: 1s all;
 }
 
 th,
 td {
-	border: 1px solid black;
+	border: 1px solid white;
 	padding: 8px;
 	text-align: center;
 	cursor: pointer;
-	background-color: rgb(192, 252, 232);
+	background-color: rgb(8, 8, 8);
 }
 
 table tr td table tr td {
-	background-color: aquamarine;
+	background-color: rgb(19, 19, 19);
 	transition: 1s all;
 }
 
@@ -59,4 +69,5 @@ table tr td table tr td {
 
 .active {
 	display: table-row;
+	transition: 1s all;
 }
