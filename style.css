@@ -1,0 +1,25 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+	cursor: pointer;
+	background-color: rgb(192, 252, 232);
+}
+
+table tr td table tr td {
+	background-color: aquamarine;
+}
+
+.collapsible-content {
+	display: none;
+}
+
+.active {
+	display: table-row;
+}
