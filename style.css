@@ -1,6 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "EB Garamond", serif;
+}
+
+body {
+	margin: 0 5%;
+}
+
+h1 {
+	text-align: center;
+}
+
 table {
+	margin-top: 5%;
 	border-collapse: collapse;
 	width: 100%;
+	transition: 1s all;
+	text-decoration: underline;
+}
+
+table .parents {
+	display: flex;
+	justify-content: space-between;
+}
+
+table .parents td {
+	width: 50%;
+}
+table .collapsible-content td table {
+	width: 70%;
+	margin: 0 auto;
+}
+
+table .collapsible-content td {
+	display: flex;
+	flex-direction: column;
 }
 
 th,
@@ -14,6 +50,7 @@ td {
 
 table tr td table tr td {
 	background-color: aquamarine;
+	transition: 1s all;
 }
 
 .collapsible-content {
